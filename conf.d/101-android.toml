@@ -1,0 +1,7 @@
+[tools]
+
+[env]
+_.path = [
+  # Android SDK mac path for Android studio
+  "~/Library/Android/sdk/platform-tools",
+]

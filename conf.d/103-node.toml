@@ -1,0 +1,6 @@
+[settings.npm]
+bun = true
+
+[tools]
+bun = "latest"
+deno = "latest"

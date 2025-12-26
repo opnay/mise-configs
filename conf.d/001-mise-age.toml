@@ -1,0 +1,9 @@
+[settings]
+experimental = true
+
+[settings.age]
+# <iCloud Path>/.mise/age-key.txt
+key_file = "~/Library/Mobile Documents/com~apple~CloudDocs/.mise/age-key.txt"
+
+[tools]
+age = "latest" # not needed but for clarity

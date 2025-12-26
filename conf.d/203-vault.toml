@@ -1,0 +1,6 @@
+[tools]
+vault = "latest"
+
+[tasks.vault-login]
+description = "Login to Vault"
+run = "vault login -method=oidc"

@@ -1,0 +1,5 @@
+.env*
+
+# Ignore some 9* configuration files
+# - these are non-standard config for local setups
+conf.d/9*

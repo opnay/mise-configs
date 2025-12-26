@@ -1,0 +1,9 @@
+[env]
+AWS_PROFILE = "saml"
+
+[tools]
+saml2aws = "latest"
+
+[tasks.aws-login]
+description = "Authenticate with AWS using SAML"
+run = "saml2aws login --force --session-duration=43200 --disable-keychain"

@@ -1,0 +1,28 @@
+[tools]
+aws-cli = { version = "latest", symlink_bins = "true" }
+
+[tasks.ecr-login]
+description = "Login to AWS ECR"
+run = '''
+AWS_PROFILE=${usage_profile?}
+AWS_ACCOUNT_ID=$(aws sts get-caller-identity | jq -r .Account)
+echo "- Login to ECR for account: ${AWS_ACCOUNT_ID} (${usage_profile?}) @ ${usage_region?}"
+aws ecr get-login-password --region ${usage_region?} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${usage_region?}.amazonaws.com
+'''
+usage = '''
+arg "<profile>" help="AWS 프로파일" env="AWS_PROFILE"
+arg "[region]" help="AWS 리전" default="ap-northeast-1" env="AWS_REGION"
+'''
+
+[tasks.ecr-logout]
+description = "Logout from AWS ECR"
+run = '''
+AWS_PROFILE=${usage_profile?}
+AWS_ACCOUNT_ID=$(aws sts get-caller-identity | jq -r .Account)
+echo "- Logout from ECR for account: ${AWS_ACCOUNT_ID} (${usage_profile?}) @ ${usage_region?}"
+docker logout ${AWS_ACCOUNT_ID}.dkr.ecr.${usage_region?}.amazonaws.com
+'''
+usage = '''
+arg "<profile>" help="AWS 프로파일" env="AWS_PROFILE"
+arg "[region]" help="AWS 리전" default="ap-northeast-1" env="AWS_REGION"
+'''

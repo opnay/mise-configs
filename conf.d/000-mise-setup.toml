@@ -1,0 +1,6 @@
+[settings]
+experimental = true
+lockfile = true
+idiomatic_version_file_enable_tools = ['tool-versions']
+
+npm = { bun = true }

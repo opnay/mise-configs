@@ -4,3 +4,6 @@ lockfile = true
 idiomatic_version_file_enable_tools = ['tool-versions']
 
 npm = { bun = true }
+
+[shell_alias]
+ll = "ls -alhF --color=auto"

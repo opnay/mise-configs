@@ -3,7 +3,8 @@ experimental = true
 lockfile = true
 idiomatic_version_file_enable_tools = ['tool-versions']
 
-npm = { bun = true }
+[settings.npm]
+package_manager = "bun"
 
 [shell_alias]
 ll = "ls -alhF --color=auto"

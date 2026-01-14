@@ -1,5 +1,4 @@
 [tools]
-"cargo:fnm" = "latest"
 "npm:@railway/cli" = "latest"
 "npm:vercel" = "latest"
 docker-compose = "latest"

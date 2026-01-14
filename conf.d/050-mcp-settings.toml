@@ -6,3 +6,6 @@
 
 [env]
 '_'.file = ["~/.config/mise/.env.mcp", "{{ config_root }}/.env.mcp"]
+
+# Codex [Ctrl+G] to edit chat in VSCode
+"VISUAL" = "code -w"

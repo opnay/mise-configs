@@ -1,4 +1,3 @@
 [tools]
 "cargo:fnm" = "latest"
-bun = "latest"
 deno = "latest"

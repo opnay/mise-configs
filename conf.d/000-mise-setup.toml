@@ -6,5 +6,12 @@ idiomatic_version_file_enable_tools = ['tool-versions']
 [settings.npm]
 package_manager = "bun"
 
+[settings.pipx]
+uvx = true
+
 [shell_alias]
 ll = "ls -alhF --color=auto"
+
+[tools]
+bun = "latest"
+uv = "latest"

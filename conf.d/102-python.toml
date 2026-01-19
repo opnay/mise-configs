@@ -1,3 +1,2 @@
 [tools]
-poetry = "latest"
-uv = "latest"
+"pipx:poetry" = { version = "latest", uvx = true }

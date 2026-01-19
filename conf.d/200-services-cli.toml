@@ -1,0 +1,9 @@
+[tools]
+# Github
+github-cli = "latest"
+
+# Vercel
+"npm:vercel" = "latest"
+
+# Railway
+"npm:@railway/cli" = "latest"

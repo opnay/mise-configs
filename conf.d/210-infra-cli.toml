@@ -1,0 +1,14 @@
+[tools]
+# Docker
+docker-compose = "latest"
+
+# Kubernetes
+k9s = "latest"
+kubectl = "latest"
+kubectx = "latest"
+
+# Helm
+helm = "latest"
+
+# Terraform
+terraform = "latest"

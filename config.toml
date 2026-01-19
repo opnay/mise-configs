@@ -1,12 +1,2 @@
 [tools]
-"npm:@railway/cli" = "latest"
-"npm:vercel" = "latest"
-docker-compose = "latest"
-go = "1.24.4"
 gokey = "latest"
-helm = "latest"
-k9s = "latest"
-kubectl = "latest"
-kubectx = "latest"
-rust = "latest"
-terraform = "latest"

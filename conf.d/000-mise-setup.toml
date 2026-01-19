@@ -15,3 +15,5 @@ ll = "ls -alhF --color=auto"
 [tools]
 bun = "latest"
 uv = "latest"
+rust = "latest"
+go = "latest"

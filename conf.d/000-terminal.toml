@@ -1,0 +1,5 @@
+[tools]
+"conda:starship" = "latest"
+
+[shell_alias]
+ll = "ls -alhF --color=auto"

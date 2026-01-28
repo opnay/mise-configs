@@ -1,5 +1,21 @@
+[shell_alias]
+ll = "ls -alhF --color=auto"
+
 [tools]
 "conda:starship" = "latest"
 
-[shell_alias]
-ll = "ls -alhF --color=auto"
+[tools."http:zsh-users/zsh-autosuggestions"]
+version = "0.7.1"
+url = "https://github.com/zsh-users/zsh-autosuggestions/archive/refs/tags/v{{version}}.tar.gz"
+version_list_url = "https://api.github.com/repos/zsh-users/zsh-autosuggestions/tags"
+version_json_path = ".[].name"
+strip_components = 1
+# source "$(mise where http:zsh-users/zsh-autosuggestions)/zsh-autosuggestions.zsh"
+
+[tools."http:zsh-users/zsh-syntax-highlighting"]
+version = "0.8.0"
+url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/refs/tags/{{version}}.tar.gz"
+version_list_url = "https://api.github.com/repos/zsh-users/zsh-syntax-highlighting/tags"
+version_json_path = ".[].name"
+strip_components = 1
+# source "$(mise where http:zsh-users/zsh-syntax-highlighting)/zsh-syntax-highlighting.zsh"

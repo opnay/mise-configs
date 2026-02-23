@@ -1,3 +1,7 @@
 [tools]
 "cargo:fnm" = "latest"
 deno = "latest"
+"npm:yarn" = "latest"
+pnpm = "latest"
+
+"npm:@biomejs/biome" = "latest"

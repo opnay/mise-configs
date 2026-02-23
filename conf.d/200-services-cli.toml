@@ -1,6 +1,7 @@
 [tools]
 # Github
-github-cli = "latest"
+# Note: Codex app 같은 환경에서 mise를 인식하지 못하는 케이스가 있어 brew 사용
+# github-cli = "latest"
 
 # Vercel
 "npm:vercel" = "latest"

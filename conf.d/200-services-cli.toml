@@ -8,3 +8,9 @@
 
 # Railway
 "npm:@railway/cli" = "latest"
+
+# Cloudflare Workers
+"npm:wrangler" = "latest"
+
+[shell_alias]
+tailscale = "/Applications/Tailscale.app/Contents/MacOS/Tailscale"

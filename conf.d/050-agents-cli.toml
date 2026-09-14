@@ -3,6 +3,8 @@
 "npm:@google/gemini-cli" = "latest"
 "npm:opencode-ai" = "latest"
 
+"npm:codex-profile" = "latest"
+
 [env]
 '_'.file = ["~/.config/mise/.env.mcp", "{{ config_root }}/.env.mcp"]
 

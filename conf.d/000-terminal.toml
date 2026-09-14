@@ -1,2 +1,5 @@
 [shell_alias]
 ll = "ls -alhF --color=auto"
+
+[env]
+'_'.path = ["~/.local/bin"]

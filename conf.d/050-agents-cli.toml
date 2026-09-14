@@ -1,7 +1,6 @@
 [tools]
 "npm:@github/copilot" = "latest"
 "npm:@google/gemini-cli" = "latest"
-"npm:@openai/codex" = "latest"
 "npm:opencode-ai" = "latest"
 
 [env]

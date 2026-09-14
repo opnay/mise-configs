@@ -9,3 +9,10 @@
 
 # Codex [Ctrl+G] to edit chat in VSCode
 "VISUAL" = "code -w"
+
+[tasks.codex-provider]
+dir = "{{cwd}}"
+description = "지정한 model provider로 Codex CLI 실행"
+raw = true
+usage = 'arg "<provider>" help="Codex config.toml에 등록된 model provider 이름"'
+run = 'codex -c "model_provider=\"${usage_provider?}\""'

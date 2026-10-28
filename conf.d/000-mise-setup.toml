@@ -5,11 +5,11 @@ lockfile = true
 [settings.npm]
 package_manager = "bun"
 
-[settings.pipx]
+[settings.pypi]
 uvx = true
 
 [tools]
 bun = "latest"
-uv = "latest"
 rust = "latest"
-go = "latest"
+uv = "latest"
+python = "latest"

@@ -5,6 +5,16 @@
 
 "npm:codex-profile" = "latest"
 
+[tools."github:vercel-labs/fx"]
+version = "latest"
+os = ["macos/arm64", "macos/x64", "linux/arm64", "linux/x64"]
+
+[tools."github:vercel-labs/fx".platforms]
+macos-arm64 = { asset_pattern = "fx-macos-aarch64.tar.gz" }
+macos-x64 = { asset_pattern = "fx-macos-x86_64.tar.gz" }
+linux-arm64 = { asset_pattern = "fx-linux-aarch64.tar.gz" }
+linux-x64 = { asset_pattern = "fx-linux-x86_64.tar.gz" }
+
 [env]
 '_'.file = ["~/.config/mise/.env.mcp", "{{ config_root }}/.env.mcp"]
 

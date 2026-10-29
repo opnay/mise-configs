@@ -1,7 +1,7 @@
 [tools]
 "npm:@github/copilot" = "latest"
 "npm:@google/gemini-cli" = "latest"
-"npm:opencode-ai" = "latest"
+"npm:@opencode/cli" = { version = "latest", bun_args = "--trust" }
 
 "npm:codex-profile" = "latest"
 
